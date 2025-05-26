@@ -1,4 +1,4 @@
-fetch('data/react.json')
+fetch('data/ads.json')
   .then(res => res.json())
   .then(sections => {
     const container = document.getElementById('cheat-sheet');

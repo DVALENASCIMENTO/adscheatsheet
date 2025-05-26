@@ -1,258 +1,273 @@
 [
   {
     "number": 1,
-    "emoji": "⚛️",
-    "title": "Fundamentos do React",
-    "color": "amber",
-    "commands": [
-      {
-        "cmd": "React (SPA, Virtual DOM, JSX)",
-        "desc": "React é uma biblioteca JavaScript para construir interfaces de usuário. SPA (Single Page Application) usa uma única página com navegação dinâmica. O Virtual DOM melhora a performance ao atualizar apenas o necessário. JSX permite escrever HTML dentro do JavaScript."
-      },
-      {
-        "cmd": "npx create-react-app meu-app / npm create vite@latest",
-        "desc": "Cria um projeto React com toda configuração inicial usando Create React App ou Vite."
-      },
-      {
-        "cmd": "JSX + Babel",
-        "desc": "JSX é uma sintaxe parecida com HTML. Babel converte JSX para JavaScript puro que o navegador entende."
-      },
-      {
-        "cmd": "function MeuComponente() { return <div>Olá</div>; }",
-        "desc": "Componentes funcionais retornam JSX. São funções puras que constroem blocos da interface."
-      },
-      {
-        "cmd": "<Componente titulo='Olá'>{children}</Componente>",
-        "desc": "Props são dados passados a componentes. `children` representa os elementos internos."
-      },
-      {
-        "cmd": "const [count, setCount] = useState(0);",
-        "desc": "`useState` cria estados internos. `setCount` atualiza o valor e re-renderiza o componente."
-      },
-      {
-        "cmd": "<button onClick={handleClick}>Clique</button>",
-        "desc": "Eventos como `onClick` e `onChange` disparam funções dentro do JSX."
-      },
-      {
-        "cmd": "{condicao ? <Sim /> : <Nao />}",
-        "desc": "Renderização condicional com ternário ou `&&`. Mostra componentes conforme estado/props."
-      },
-      {
-        "cmd": "array.map(item => <li key={item.id}>{item.nome}</li>)",
-        "desc": "Para renderizar listas, use `.map()`. Cada item precisa de uma `key` única."
-      }
-    ]
+    "emoji": "💡",
+    "title": "O que é Análise e Desenvolvimento de Sistemas?",
+    "color": "blue",
+    "description": "É a área da computação que estuda, projeta, desenvolve, implementa e mantém sistemas de software. Envolve compreender as necessidades do usuário, modelar soluções tecnológicas e acompanhar seu ciclo de vida."
   },
   {
     "number": 2,
-    "emoji": "🟠",
-    "title": "React Intermediário",
-    "color": "orange",
-    "commands": [
+    "emoji": "📈",
+    "title": "Etapas do Desenvolvimento de Sistemas",
+    "color": "green",
+    "stages": [
       {
-        "cmd": "useEffect, useRef, useContext",
-        "desc": "Hooks adicionais: `useEffect` lida com efeitos colaterais, `useRef` referencia elementos, `useContext` acessa contexto global."
+        "name": "Levantamento de Requisitos",
+        "description": "Identificar e documentar o que o cliente espera que o sistema faça. Envolve entrevistas, questionários e observações."
       },
       {
-        "cmd": "Componentes controlados x não controlados",
-        "desc": "Controlados: valor via state. Não controlados: valor via `ref`. Use controlados para melhor controle de formulários."
+        "name": "Análise",
+        "description": "Transformar os requisitos em modelos funcionais. Usa diagramas e técnicas de modelagem para planejar o sistema."
       },
       {
-        "cmd": "<form onSubmit={handleSubmit}>...</form>",
-        "desc": "Formulários com validação devem prevenir recarregamento (event.preventDefault) e validar dados no submit."
+        "name": "Projeto (Design)",
+        "description": "Definir arquitetura, tecnologias e estruturas de dados. Criação de diagramas de classes, banco de dados e interfaces."
       },
       {
-        "cmd": "CSS Modules / Styled Components / Tailwind",
-        "desc": "Três formas de estilizar: CSS Modules para escopo local, Styled Components para JS, Tailwind para utilitários."
+        "name": "Implementação",
+        "description": "Codificar o sistema de acordo com os modelos e especificações definidos na fase de projeto."
       },
       {
-        "cmd": "components/MeuComponente.jsx",
-        "desc": "Organize componentes por pastas, com nomes claros e responsabilidade única."
+        "name": "Testes",
+        "description": "Verificar se o sistema funciona corretamente, com testes unitários, de integração, de aceitação e outros."
       },
       {
-        "cmd": "<Layout><Header /><Main /></Layout>",
-        "desc": "Composição de componentes permite combinar e reutilizar blocos da UI de forma escalável."
+        "name": "Implantação",
+        "description": "Disponibilizar o sistema para os usuários finais, incluindo instalação e treinamento."
       },
       {
-        "cmd": "useEffect(() => {...}, [dependencias])",
-        "desc": "Simula ciclo de vida do componente: montar, atualizar e desmontar."
+        "name": "Manutenção",
+        "description": "Corrigir erros, adicionar novas funcionalidades e melhorar o desempenho com o sistema já em uso."
       }
     ]
   },
   {
     "number": 3,
-    "emoji": "🔵",
-    "title": "React Avançado",
-    "color": "blue",
-    "commands": [
+    "emoji": "🧰",
+    "title": "Principais Ferramentas Utilizadas",
+    "color": "orange",
+    "tools": [
       {
-        "cmd": "React Router v6+",
-        "desc": "Roteamento declarativo com `<Routes>`, `<Route>`, `useNavigate`, `useParams`. Suporte a rotas aninhadas."
+        "name": "IDE's",
+        "examples": ["Visual Studio Code", "IntelliJ IDEA", "Eclipse"]
       },
       {
-        "cmd": "Context API + useReducer",
-        "desc": "Gerencia estados globais com reducer para lógica complexa. `dispatch` substitui `setState`."
+        "name": "Modelagem",
+        "examples": ["StarUML", "Lucidchart", "Draw.io"]
       },
       {
-        "cmd": "Lifting State Up",
-        "desc": "Elevar o estado ao componente pai permite compartilhamento de dados entre filhos."
+        "name": "Controle de Versão",
+        "examples": ["Git", "GitHub", "GitLab"]
       },
       {
-        "cmd": "useRef para DOM",
-        "desc": "`useRef` acessa e manipula elementos DOM diretamente (focus, scroll etc)."
-      },
-      {
-        "cmd": "Custom Hooks",
-        "desc": "Encapsule lógica reutilizável em funções como `useForm`, `useFetch`, etc."
-      },
-      {
-        "cmd": "Error Boundaries",
-        "desc": "Capturam erros de renderização com componentes de classe usando `componentDidCatch`."
-      },
-      {
-        "cmd": "Suspense + Lazy",
-        "desc": "Importação dinâmica com `React.lazy()` e fallback com `<Suspense>`."
-      },
-      {
-        "cmd": "memo / useMemo / useCallback",
-        "desc": "`memo` evita re-renderizações. `useMemo` memoriza valores. `useCallback` memoriza funções."
+        "name": "Bancos de Dados",
+        "examples": ["MySQL", "PostgreSQL", "MongoDB"]
       }
     ]
   },
   {
     "number": 4,
-    "emoji": "🔴",
-    "title": "Integração com Back-End",
-    "color": "red",
-    "commands": [
+    "emoji": "📊",
+    "title": "Modelagem de Sistemas",
+    "color": "purple",
+    "description": "Modelar um sistema significa representá-lo visualmente usando diagramas. Isso ajuda na comunicação entre analistas, desenvolvedores e clientes.",
+    "examples": [
       {
-        "cmd": "fetch / axios",
-        "desc": "Ambos fazem requisições HTTP. Axios possui interceptadores, fetch é nativo."
+        "type": "Diagrama de Casos de Uso",
+        "description": "Mostra as funcionalidades do sistema e os atores envolvidos."
       },
       {
-        "cmd": "REST API (GET, POST, PUT, DELETE)",
-        "desc": "Comunique-se com back-end usando métodos HTTP para ler e alterar dados."
+        "type": "Diagrama de Classes",
+        "description": "Mostra as classes do sistema, seus atributos, métodos e relações."
       },
       {
-        "cmd": "CRUD completo",
-        "desc": "Crie telas para listar, adicionar, editar e excluir dados com integração de APIs."
-      },
-      {
-        "cmd": "Login / Logout",
-        "desc": "Use forms + requisições para autenticar usuários. Armazene o token após login."
-      },
-      {
-        "cmd": "localStorage / sessionStorage",
-        "desc": "Persistência de dados no navegador. Ideal para tokens, preferências, temas etc."
+        "type": "Diagrama de Sequência",
+        "description": "Representa a interação entre objetos ao longo do tempo."
       }
     ]
   },
   {
     "number": 5,
-    "emoji": "⚫",
-    "title": "Testes em React",
-    "color": "black",
-    "commands": [
-      {
-        "cmd": "React Testing Library (RTL)",
-        "desc": "Testa componentes de forma orientada ao usuário. Usa queries como `getByText`, `getByRole`."
-      },
-      {
-        "cmd": "Jest",
-        "desc": "Framework de testes para JS/TS. Usado com RTL para testes unitários e mocks."
-      },
-      {
-        "cmd": "Teste de componentes",
-        "desc": "Teste interações, renderização, entradas e saídas de componentes isolados."
-      },
-      {
-        "cmd": "Teste de hooks",
-        "desc": "Use `@testing-library/react-hooks` ou `renderHook` para testar lógica dos hooks."
-      }
-    ]
+    "emoji": "🧑‍💻",
+    "title": "Perfil do Profissional",
+    "color": "teal",
+    "description": "O analista e desenvolvedor de sistemas precisa ter raciocínio lógico, capacidade analítica, conhecimento técnico e habilidades de comunicação. Trabalha frequentemente em equipe, sendo responsável por transformar necessidades em soluções digitais."
   },
   {
     "number": 6,
-    "emoji": "🟣",
-    "title": "Gerenciamento de Estado Avançado",
-    "color": "purple",
-    "commands": [
-      {
-        "cmd": "Redux / Zustand",
-        "desc": "Redux oferece estrutura robusta e padrão. Zustand é leve e simples, baseado em hooks."
-      },
-      {
-        "cmd": "Redux Toolkit",
-        "desc": "API oficial para simplificar Redux: `createSlice`, `configureStore`, `createAsyncThunk`."
-      },
-      {
-        "cmd": "Context vs Redux",
-        "desc": "Context é ideal para dados simples e estáticos. Redux lida melhor com grandes fluxos e lógica complexa."
-      },
-      {
-        "cmd": "Redux DevTools",
-        "desc": "Ferramenta para inspecionar e depurar ações e estados em Redux."
-      }
-    ]
+    "emoji": "🔐",
+    "title": "Segurança da Informação",
+    "color": "red",
+    "description": "É fundamental considerar aspectos de segurança durante o desenvolvimento: criptografia, autenticação, autorização, backups e prevenção contra ataques (SQL Injection, XSS, etc.)."
   },
   {
     "number": 7,
-    "emoji": "⚪",
-    "title": "Ferramentas e Boas Práticas",
-    "color": "gray",
-    "commands": [
+    "emoji": "⚙️",
+    "title": "Metodologias de Desenvolvimento",
+    "color": "yellow",
+    "description": "Existem diversas formas de organizar o processo de desenvolvimento de sistemas. As mais comuns são metodologias ágeis e tradicionais.",
+    "examples": [
       {
-        "cmd": "ESLint + Prettier",
-        "desc": "Padroniza e formata automaticamente o código. Evita erros e melhora a leitura."
+        "name": "Cascata (Waterfall)",
+        "description": "Sequência linear de etapas. Ideal para projetos bem definidos."
       },
       {
-        "cmd": "PropTypes / TypeScript",
-        "desc": "PropTypes valida props em JS. TypeScript fornece tipagem estática para maior segurança."
+        "name": "Scrum",
+        "description": "Metodologia ágil com sprints, reuniões diárias e entregas incrementais."
       },
       {
-        "cmd": "Git + versionamento",
-        "desc": "Use Git para salvar versões, trabalhar em equipe e manter histórico de alterações."
-      },
-      {
-        "cmd": "Deploy (Vercel / Netlify / GitHub Pages)",
-        "desc": "Hospede seu app React gratuitamente com plataformas modernas e simples."
-      },
-      {
-        "cmd": "CI/CD com GitHub Actions",
-        "desc": "Automatize testes e deploy com GitHub Actions sempre que houver push no repositório."
+        "name": "Kanban",
+        "description": "Usa um quadro visual para gerenciar tarefas e fluxo de trabalho contínuo."
       }
     ]
   },
   {
     "number": 8,
-    "emoji": "🟤",
-    "title": "Extras e Profissionalização",
-    "color": "brown",
-    "commands": [
+    "emoji": "🌐",
+    "title": "Desenvolvimento Web e Mobile",
+    "color": "cyan",
+    "description": "O profissional pode atuar no desenvolvimento de aplicações web (front-end e back-end) e mobile (Android, iOS, multiplataforma).",
+    "tecnologias": [
+      "HTML, CSS, JavaScript, React, Vue",
+      "Node.js, PHP, Java, .NET",
+      "React Native, Flutter, Kotlin, Swift"
+    ]
+  },
+  {
+    "number": 9,
+    "emoji": "🔍",
+    "title": "Testes e Qualidade de Software",
+    "color": "pink",
+    "description": "Testes asseguram que o sistema funcione corretamente. Existem testes manuais e automatizados, com foco em garantir a qualidade do produto.",
+    "tipos": [
+      "Testes Unitários",
+      "Testes de Integração",
+      "Testes de Aceitação",
+      "Testes de Usabilidade"
+    ]
+  },
+  {
+    "number": 10,
+    "emoji": "📚",
+    "title": "Recursos para aprender mais",
+    "color": "gray",
+    "resources": [
+      "Livros como 'Engenharia de Software' (Pressman), 'UML Distilled'",
+      "Cursos em Udemy, Alura, Coursera",
+      "Documentações oficiais de linguagens e frameworks",
+      "Comunidades de desenvolvedores como Stack Overflow, Dev.to e GitHub"
+    ]
+  }
+  {
+    "number": 11,
+    "emoji": "🚀",
+    "title": "DevOps no Desenvolvimento de Sistemas",
+    "color": "indigo",
+    "description": "DevOps é uma cultura que une desenvolvimento (Dev) e operações (Ops) com foco em integração contínua, entrega contínua (CI/CD), automação e colaboração para tornar o ciclo de vida do software mais ágil e confiável.",
+    "principais_práticas": [
+      "Integração Contínua (CI)",
+      "Entrega Contínua (CD)",
+      "Infraestrutura como Código (IaC)",
+      "Monitoramento e Logs",
+      "Automação de Testes e Deploy"
+    ],
+    "ferramentas_populares": [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Terraform"
+    ]
+  },
+  {
+    "number": 12,
+    "emoji": "🎯",
+    "title": "Caminhos de Carreira",
+    "color": "blue",
+    "description": "Profissionais de Análise e Desenvolvimento de Sistemas podem seguir diferentes caminhos conforme suas habilidades e interesses. A carreira pode evoluir para áreas técnicas ou de gestão.",
+    "possibilidades": [
+      "Desenvolvedor Front-end ou Back-end",
+      "Engenheiro de Software",
+      "Analista de Sistemas",
+      "Arquiteto de Software",
+      "Product Owner / Scrum Master",
+      "Gestor de Projetos de TI",
+      "Especialista em Qualidade (QA)",
+      "DevOps Engineer"
+    ]
+  },
+  {
+    "number": 13,
+    "emoji": "📜",
+    "title": "Certificações Relevantes",
+    "color": "green",
+    "description": "Certificações ajudam a validar seu conhecimento e abrir portas no mercado de trabalho. Elas podem ser voltadas para metodologias, linguagens ou ferramentas específicas.",
+    "exemplos": [
       {
-        "cmd": "Next.js (SSR)",
-        "desc": "Framework baseado em React com suporte a Server Side Rendering e rotas automáticas."
+        "name": "Scrum Fundamentals / PSM / CSPO",
+        "area": "Metodologias Ágeis"
       },
       {
-        "cmd": "React Native",
-        "desc": "Construa apps mobile nativos com a mesma base do React para web."
+        "name": "AWS Certified Developer",
+        "area": "Computação em Nuvem"
       },
       {
-        "cmd": "SEO com React",
-        "desc": "React puro não é ideal para SEO. Use SSR (Next.js) ou pré-renderização (Gatsby)."
+        "name": "Oracle Java SE Programmer",
+        "area": "Linguagens de Programação"
       },
       {
-        "cmd": "Design Patterns em React",
-        "desc": "Use padrões como Container/Presentational, Hooks reutilizáveis e Render Props."
+        "name": "Microsoft Azure Fundamentals",
+        "area": "Cloud & DevOps"
       },
       {
-        "cmd": "Clean Code + Arquitetura",
-        "desc": "Organize diretórios por domínio, separe responsabilidades, evite código duplicado e comente com clareza."
+        "name": "ISTQB Foundation",
+        "area": "Testes de Software"
       },
       {
-        "cmd": "Acessibilidade (ARIA)",
-        "desc": "Implemente `aria-label`, `role`, foco navegável e contraste adequado para usuários com deficiência."
+        "name": "GitHub Octernship / Google Career Certificates",
+        "area": "Prática e Iniciação"
       }
+    ]
+  },
+  {
+    "number": 14,
+    "emoji": "🧪",
+    "title": "Projetos Práticos Recomendados",
+    "color": "purple",
+    "description": "Aplicar o conhecimento em projetos reais é essencial para desenvolver habilidades técnicas e montar um portfólio competitivo.",
+    "ideias_de_projetos": [
+      "Sistema de controle de estoque com login e banco de dados",
+      "Aplicativo de tarefas com notificações e CRUD",
+      "Plataforma de cursos online com autenticação e pagamentos simulados",
+      "Blog com painel administrativo e integração com APIs",
+      "Aplicativo de agenda pessoal com integração com calendário do Google"
+    ],
+    "beneficios": [
+      "Fixação do conhecimento",
+      "Criação de portfólio",
+      "Experiência com Git e versionamento",
+      "Preparação para entrevistas técnicas"
+    ]
+  },
+  {
+    "number": 15,
+    "emoji": "🧠",
+    "title": "Habilidades Complementares",
+    "color": "cyan",
+    "description": "Além da parte técnica, algumas habilidades comportamentais e de organização são valorizadas no mercado de desenvolvimento.",
+    "soft_skills": [
+      "Comunicação eficaz",
+      "Trabalho em equipe",
+      "Pensamento lógico",
+      "Gestão de tempo",
+      "Resolução de problemas"
+    ],
+    "hard_skills_extra": [
+      "Noções de UX/UI",
+      "Conceitos de Cloud Computing",
+      "Automação de testes",
+      "Inglês técnico"
     ]
   }
 ]
