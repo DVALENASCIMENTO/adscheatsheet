@@ -1,0 +1,258 @@
+[
+  {
+    "number": 1,
+    "emoji": "⚛️",
+    "title": "Fundamentos do React",
+    "color": "amber",
+    "commands": [
+      {
+        "cmd": "React (SPA, Virtual DOM, JSX)",
+        "desc": "React é uma biblioteca JavaScript para construir interfaces de usuário. SPA (Single Page Application) usa uma única página com navegação dinâmica. O Virtual DOM melhora a performance ao atualizar apenas o necessário. JSX permite escrever HTML dentro do JavaScript."
+      },
+      {
+        "cmd": "npx create-react-app meu-app / npm create vite@latest",
+        "desc": "Cria um projeto React com toda configuração inicial usando Create React App ou Vite."
+      },
+      {
+        "cmd": "JSX + Babel",
+        "desc": "JSX é uma sintaxe parecida com HTML. Babel converte JSX para JavaScript puro que o navegador entende."
+      },
+      {
+        "cmd": "function MeuComponente() { return <div>Olá</div>; }",
+        "desc": "Componentes funcionais retornam JSX. São funções puras que constroem blocos da interface."
+      },
+      {
+        "cmd": "<Componente titulo='Olá'>{children}</Componente>",
+        "desc": "Props são dados passados a componentes. `children` representa os elementos internos."
+      },
+      {
+        "cmd": "const [count, setCount] = useState(0);",
+        "desc": "`useState` cria estados internos. `setCount` atualiza o valor e re-renderiza o componente."
+      },
+      {
+        "cmd": "<button onClick={handleClick}>Clique</button>",
+        "desc": "Eventos como `onClick` e `onChange` disparam funções dentro do JSX."
+      },
+      {
+        "cmd": "{condicao ? <Sim /> : <Nao />}",
+        "desc": "Renderização condicional com ternário ou `&&`. Mostra componentes conforme estado/props."
+      },
+      {
+        "cmd": "array.map(item => <li key={item.id}>{item.nome}</li>)",
+        "desc": "Para renderizar listas, use `.map()`. Cada item precisa de uma `key` única."
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "emoji": "🟠",
+    "title": "React Intermediário",
+    "color": "orange",
+    "commands": [
+      {
+        "cmd": "useEffect, useRef, useContext",
+        "desc": "Hooks adicionais: `useEffect` lida com efeitos colaterais, `useRef` referencia elementos, `useContext` acessa contexto global."
+      },
+      {
+        "cmd": "Componentes controlados x não controlados",
+        "desc": "Controlados: valor via state. Não controlados: valor via `ref`. Use controlados para melhor controle de formulários."
+      },
+      {
+        "cmd": "<form onSubmit={handleSubmit}>...</form>",
+        "desc": "Formulários com validação devem prevenir recarregamento (event.preventDefault) e validar dados no submit."
+      },
+      {
+        "cmd": "CSS Modules / Styled Components / Tailwind",
+        "desc": "Três formas de estilizar: CSS Modules para escopo local, Styled Components para JS, Tailwind para utilitários."
+      },
+      {
+        "cmd": "components/MeuComponente.jsx",
+        "desc": "Organize componentes por pastas, com nomes claros e responsabilidade única."
+      },
+      {
+        "cmd": "<Layout><Header /><Main /></Layout>",
+        "desc": "Composição de componentes permite combinar e reutilizar blocos da UI de forma escalável."
+      },
+      {
+        "cmd": "useEffect(() => {...}, [dependencias])",
+        "desc": "Simula ciclo de vida do componente: montar, atualizar e desmontar."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "emoji": "🔵",
+    "title": "React Avançado",
+    "color": "blue",
+    "commands": [
+      {
+        "cmd": "React Router v6+",
+        "desc": "Roteamento declarativo com `<Routes>`, `<Route>`, `useNavigate`, `useParams`. Suporte a rotas aninhadas."
+      },
+      {
+        "cmd": "Context API + useReducer",
+        "desc": "Gerencia estados globais com reducer para lógica complexa. `dispatch` substitui `setState`."
+      },
+      {
+        "cmd": "Lifting State Up",
+        "desc": "Elevar o estado ao componente pai permite compartilhamento de dados entre filhos."
+      },
+      {
+        "cmd": "useRef para DOM",
+        "desc": "`useRef` acessa e manipula elementos DOM diretamente (focus, scroll etc)."
+      },
+      {
+        "cmd": "Custom Hooks",
+        "desc": "Encapsule lógica reutilizável em funções como `useForm`, `useFetch`, etc."
+      },
+      {
+        "cmd": "Error Boundaries",
+        "desc": "Capturam erros de renderização com componentes de classe usando `componentDidCatch`."
+      },
+      {
+        "cmd": "Suspense + Lazy",
+        "desc": "Importação dinâmica com `React.lazy()` e fallback com `<Suspense>`."
+      },
+      {
+        "cmd": "memo / useMemo / useCallback",
+        "desc": "`memo` evita re-renderizações. `useMemo` memoriza valores. `useCallback` memoriza funções."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "emoji": "🔴",
+    "title": "Integração com Back-End",
+    "color": "red",
+    "commands": [
+      {
+        "cmd": "fetch / axios",
+        "desc": "Ambos fazem requisições HTTP. Axios possui interceptadores, fetch é nativo."
+      },
+      {
+        "cmd": "REST API (GET, POST, PUT, DELETE)",
+        "desc": "Comunique-se com back-end usando métodos HTTP para ler e alterar dados."
+      },
+      {
+        "cmd": "CRUD completo",
+        "desc": "Crie telas para listar, adicionar, editar e excluir dados com integração de APIs."
+      },
+      {
+        "cmd": "Login / Logout",
+        "desc": "Use forms + requisições para autenticar usuários. Armazene o token após login."
+      },
+      {
+        "cmd": "localStorage / sessionStorage",
+        "desc": "Persistência de dados no navegador. Ideal para tokens, preferências, temas etc."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "emoji": "⚫",
+    "title": "Testes em React",
+    "color": "black",
+    "commands": [
+      {
+        "cmd": "React Testing Library (RTL)",
+        "desc": "Testa componentes de forma orientada ao usuário. Usa queries como `getByText`, `getByRole`."
+      },
+      {
+        "cmd": "Jest",
+        "desc": "Framework de testes para JS/TS. Usado com RTL para testes unitários e mocks."
+      },
+      {
+        "cmd": "Teste de componentes",
+        "desc": "Teste interações, renderização, entradas e saídas de componentes isolados."
+      },
+      {
+        "cmd": "Teste de hooks",
+        "desc": "Use `@testing-library/react-hooks` ou `renderHook` para testar lógica dos hooks."
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "emoji": "🟣",
+    "title": "Gerenciamento de Estado Avançado",
+    "color": "purple",
+    "commands": [
+      {
+        "cmd": "Redux / Zustand",
+        "desc": "Redux oferece estrutura robusta e padrão. Zustand é leve e simples, baseado em hooks."
+      },
+      {
+        "cmd": "Redux Toolkit",
+        "desc": "API oficial para simplificar Redux: `createSlice`, `configureStore`, `createAsyncThunk`."
+      },
+      {
+        "cmd": "Context vs Redux",
+        "desc": "Context é ideal para dados simples e estáticos. Redux lida melhor com grandes fluxos e lógica complexa."
+      },
+      {
+        "cmd": "Redux DevTools",
+        "desc": "Ferramenta para inspecionar e depurar ações e estados em Redux."
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "emoji": "⚪",
+    "title": "Ferramentas e Boas Práticas",
+    "color": "gray",
+    "commands": [
+      {
+        "cmd": "ESLint + Prettier",
+        "desc": "Padroniza e formata automaticamente o código. Evita erros e melhora a leitura."
+      },
+      {
+        "cmd": "PropTypes / TypeScript",
+        "desc": "PropTypes valida props em JS. TypeScript fornece tipagem estática para maior segurança."
+      },
+      {
+        "cmd": "Git + versionamento",
+        "desc": "Use Git para salvar versões, trabalhar em equipe e manter histórico de alterações."
+      },
+      {
+        "cmd": "Deploy (Vercel / Netlify / GitHub Pages)",
+        "desc": "Hospede seu app React gratuitamente com plataformas modernas e simples."
+      },
+      {
+        "cmd": "CI/CD com GitHub Actions",
+        "desc": "Automatize testes e deploy com GitHub Actions sempre que houver push no repositório."
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "emoji": "🟤",
+    "title": "Extras e Profissionalização",
+    "color": "brown",
+    "commands": [
+      {
+        "cmd": "Next.js (SSR)",
+        "desc": "Framework baseado em React com suporte a Server Side Rendering e rotas automáticas."
+      },
+      {
+        "cmd": "React Native",
+        "desc": "Construa apps mobile nativos com a mesma base do React para web."
+      },
+      {
+        "cmd": "SEO com React",
+        "desc": "React puro não é ideal para SEO. Use SSR (Next.js) ou pré-renderização (Gatsby)."
+      },
+      {
+        "cmd": "Design Patterns em React",
+        "desc": "Use padrões como Container/Presentational, Hooks reutilizáveis e Render Props."
+      },
+      {
+        "cmd": "Clean Code + Arquitetura",
+        "desc": "Organize diretórios por domínio, separe responsabilidades, evite código duplicado e comente com clareza."
+      },
+      {
+        "cmd": "Acessibilidade (ARIA)",
+        "desc": "Implemente `aria-label`, `role`, foco navegável e contraste adequado para usuários com deficiência."
+      }
+    ]
+  }
+]
