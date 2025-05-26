@@ -4,41 +4,46 @@
     "emoji": "💡",
     "title": "O que é Análise e Desenvolvimento de Sistemas?",
     "color": "blue",
-    "description": "É a área da computação que estuda, projeta, desenvolve, implementa e mantém sistemas de software. Envolve compreender as necessidades do usuário, modelar soluções tecnológicas e acompanhar seu ciclo de vida."
+    "commands": [
+      {
+        "cmd": "Definição",
+        "desc": "É uma área fundamental da computação que envolve o estudo e aplicação de técnicas para projetar, implementar e manter sistemas de software. O profissional precisa compreender profundamente as necessidades do usuário ou da organização, traduzindo-as em soluções tecnológicas eficientes. Além disso, é responsável por acompanhar todo o ciclo de vida do sistema, desde sua concepção até sua manutenção, garantindo que a solução esteja sempre alinhada com os objetivos estratégicos do negócio."
+      }
+    ]
   },
   {
     "number": 2,
     "emoji": "📈",
     "title": "Etapas do Desenvolvimento de Sistemas",
     "color": "green",
-    "stages": [
+    "commands": [
       {
-        "name": "Levantamento de Requisitos",
-        "description": "Identificar e documentar o que o cliente espera que o sistema faça. Envolve entrevistas, questionários e observações."
+        "cmd": "Levantamento de Requisitos",
+        "desc": "Esta etapa busca identificar e documentar as necessidades do cliente, descrevendo funcionalidades que o sistema deverá oferecer. Técnicas comuns incluem entrevistas, questionários, brainstormings e observações no ambiente do usuário. Um levantamento eficaz evita retrabalho e garante que o produto final atenda às expectativas."
       },
       {
-        "name": "Análise",
-        "description": "Transformar os requisitos em modelos funcionais. Usa diagramas e técnicas de modelagem para planejar o sistema."
+        "cmd": "Análise",
+        "desc": "Na análise, os requisitos são organizados e refinados, utilizando modelos como diagramas de casos de uso e fluxogramas para visualizar o funcionamento do sistema. Essa etapa permite identificar possíveis problemas, dependências e validar que as soluções propostas são viáveis técnica e economicamente."
       },
       {
-        "name": "Projeto (Design)",
-        "description": "Definir arquitetura, tecnologias e estruturas de dados. Criação de diagramas de classes, banco de dados e interfaces."
+        "cmd": "Projeto (Design)",
+        "desc": "O projeto define como o sistema será implementado, especificando sua arquitetura, tecnologias e padrões de codificação. Diagramas de classes, modelagem de banco de dados e protótipos de interface são criados para guiar a equipe de desenvolvimento, garantindo coesão e manutenibilidade."
       },
       {
-        "name": "Implementação",
-        "description": "Codificar o sistema de acordo com os modelos e especificações definidos na fase de projeto."
+        "cmd": "Implementação",
+        "desc": "Consiste na programação propriamente dita, onde os desenvolvedores transformam os modelos criados em código executável. Além disso, são criadas rotinas de integração entre sistemas, migração de dados e scripts de automação, respeitando as melhores práticas de desenvolvimento seguro e eficiente."
       },
       {
-        "name": "Testes",
-        "description": "Verificar se o sistema funciona corretamente, com testes unitários, de integração, de aceitação e outros."
+        "cmd": "Testes",
+        "desc": "Fundamental para assegurar a qualidade do software, os testes incluem desde a verificação de funcionalidades individuais (testes unitários), até o comportamento do sistema como um todo (testes de integração e aceitação). O objetivo é identificar e corrigir falhas antes da entrega ao cliente."
       },
       {
-        "name": "Implantação",
-        "description": "Disponibilizar o sistema para os usuários finais, incluindo instalação e treinamento."
+        "cmd": "Implantação",
+        "desc": "A implantação envolve a disponibilização do sistema para o ambiente de produção. Inclui instalação, configuração, treinamento dos usuários e elaboração de materiais de apoio, como manuais e FAQs. É comum também planejar um rollback para eventuais problemas."
       },
       {
-        "name": "Manutenção",
-        "description": "Corrigir erros, adicionar novas funcionalidades e melhorar o desempenho com o sistema já em uso."
+        "cmd": "Manutenção",
+        "desc": "Após a entrega, a manutenção garante que o sistema continue eficiente e seguro. Pode envolver correção de bugs, otimização de desempenho, atualização de tecnologias e inclusão de novas funcionalidades conforme surgirem novas necessidades do negócio."
       }
     ]
   },
@@ -47,22 +52,22 @@
     "emoji": "🧰",
     "title": "Principais Ferramentas Utilizadas",
     "color": "orange",
-    "tools": [
+    "commands": [
       {
-        "name": "IDE's",
-        "examples": ["Visual Studio Code", "IntelliJ IDEA", "Eclipse"]
+        "cmd": "IDE's",
+        "desc": "Ambientes de Desenvolvimento Integrado como Visual Studio Code, IntelliJ IDEA e Eclipse proporcionam aos programadores recursos essenciais como depuração, autocompletar, controle de versão e execução de testes, acelerando o desenvolvimento e reduzindo erros."
       },
       {
-        "name": "Modelagem",
-        "examples": ["StarUML", "Lucidchart", "Draw.io"]
+        "cmd": "Modelagem",
+        "desc": "Ferramentas como StarUML, Lucidchart e Draw.io auxiliam na criação de diagramas UML e fluxogramas, permitindo uma visão clara da estrutura e comportamento do sistema. Elas são indispensáveis para comunicar ideias de design entre membros da equipe."
       },
       {
-        "name": "Controle de Versão",
-        "examples": ["Git", "GitHub", "GitLab"]
+        "cmd": "Controle de Versão",
+        "desc": "Git, GitHub e GitLab permitem rastrear alterações no código-fonte, facilitar o trabalho colaborativo e garantir a integridade do projeto. São fundamentais para manter o histórico de desenvolvimento, criar ramificações (branches) e gerenciar versões."
       },
       {
-        "name": "Bancos de Dados",
-        "examples": ["MySQL", "PostgreSQL", "MongoDB"]
+        "cmd": "Bancos de Dados",
+        "desc": "Sistemas de gerenciamento de banco de dados como MySQL, PostgreSQL e MongoDB são essenciais para o armazenamento e recuperação eficiente de dados. Cada um possui características específicas que se adequam a diferentes tipos de aplicações."
       }
     ]
   },
@@ -71,19 +76,18 @@
     "emoji": "📊",
     "title": "Modelagem de Sistemas",
     "color": "purple",
-    "description": "Modelar um sistema significa representá-lo visualmente usando diagramas. Isso ajuda na comunicação entre analistas, desenvolvedores e clientes.",
-    "examples": [
+    "commands": [
       {
-        "type": "Diagrama de Casos de Uso",
-        "description": "Mostra as funcionalidades do sistema e os atores envolvidos."
+        "cmd": "Diagrama de Casos de Uso",
+        "desc": "Representa as funcionalidades que o sistema oferece (casos de uso) e os atores que interagem com ele, como usuários ou outros sistemas. É uma ferramenta útil para entender e comunicar os requisitos funcionais."
       },
       {
-        "type": "Diagrama de Classes",
-        "description": "Mostra as classes do sistema, seus atributos, métodos e relações."
+        "cmd": "Diagrama de Classes",
+        "desc": "Modela as classes do sistema, seus atributos, métodos e relacionamentos. Auxilia na definição da estrutura do software e na identificação de padrões de projeto para reutilização e manutenibilidade do código."
       },
       {
-        "type": "Diagrama de Sequência",
-        "description": "Representa a interação entre objetos ao longo do tempo."
+        "cmd": "Diagrama de Sequência",
+        "desc": "Mostra como os objetos do sistema interagem entre si ao longo do tempo, detalhando a troca de mensagens e a ordem de execução. É valioso para especificar o comportamento dinâmico e validar fluxos complexos."
       }
     ]
   },
@@ -92,33 +96,42 @@
     "emoji": "🧑‍💻",
     "title": "Perfil do Profissional",
     "color": "teal",
-    "description": "O analista e desenvolvedor de sistemas precisa ter raciocínio lógico, capacidade analítica, conhecimento técnico e habilidades de comunicação. Trabalha frequentemente em equipe, sendo responsável por transformar necessidades em soluções digitais."
+    "commands": [
+      {
+        "cmd": "Habilidades Necessárias",
+        "desc": "Além de sólida base técnica em programação, bancos de dados e engenharia de software, o profissional precisa ter raciocínio lógico, capacidade analítica e habilidades interpessoais. A comunicação eficaz é essencial para entender as demandas do cliente e trabalhar em equipe, enquanto a capacidade de resolver problemas garante a superação de desafios técnicos."
+      }
+    ]
   },
   {
     "number": 6,
     "emoji": "🔐",
     "title": "Segurança da Informação",
     "color": "red",
-    "description": "É fundamental considerar aspectos de segurança durante o desenvolvimento: criptografia, autenticação, autorização, backups e prevenção contra ataques (SQL Injection, XSS, etc.)."
+    "commands": [
+      {
+        "cmd": "Boas Práticas",
+        "desc": "Implementar criptografia para proteger dados sensíveis, autenticação e autorização para controlar o acesso, backups periódicos para evitar perda de dados, além de medidas preventivas contra ataques como SQL Injection e Cross-Site Scripting (XSS). A segurança deve ser incorporada desde a concepção do sistema, evitando vulnerabilidades."
+      }
+    ]
   },
   {
     "number": 7,
     "emoji": "⚙️",
     "title": "Metodologias de Desenvolvimento",
     "color": "yellow",
-    "description": "Existem diversas formas de organizar o processo de desenvolvimento de sistemas. As mais comuns são metodologias ágeis e tradicionais.",
-    "examples": [
+    "commands": [
       {
-        "name": "Cascata (Waterfall)",
-        "description": "Sequência linear de etapas. Ideal para projetos bem definidos."
+        "cmd": "Cascata (Waterfall)",
+        "desc": "Modelo tradicional em que cada fase do desenvolvimento é concluída antes do início da próxima. É indicado para projetos com requisitos bem definidos e baixa probabilidade de mudanças, proporcionando clareza no cronograma e orçamento."
       },
       {
-        "name": "Scrum",
-        "description": "Metodologia ágil com sprints, reuniões diárias e entregas incrementais."
+        "cmd": "Scrum",
+        "desc": "Metodologia ágil que divide o trabalho em ciclos curtos chamados sprints. Envolve reuniões diárias (daily meetings), revisões regulares e retrospectivas, permitindo ajustes rápidos e foco na entrega contínua de valor."
       },
       {
-        "name": "Kanban",
-        "description": "Usa um quadro visual para gerenciar tarefas e fluxo de trabalho contínuo."
+        "cmd": "Kanban",
+        "desc": "Sistema visual de gerenciamento de tarefas que utiliza quadros e cartões para acompanhar o fluxo de trabalho. Ideal para ambientes com demandas variáveis e necessidade de flexibilidade, promovendo a melhoria contínua."
       }
     ]
   },
@@ -127,11 +140,19 @@
     "emoji": "🌐",
     "title": "Desenvolvimento Web e Mobile",
     "color": "cyan",
-    "description": "O profissional pode atuar no desenvolvimento de aplicações web (front-end e back-end) e mobile (Android, iOS, multiplataforma).",
-    "tecnologias": [
-      "HTML, CSS, JavaScript, React, Vue",
-      "Node.js, PHP, Java, .NET",
-      "React Native, Flutter, Kotlin, Swift"
+    "commands": [
+      {
+        "cmd": "Web",
+        "desc": "Envolve a criação de interfaces e funcionalidades para aplicações acessadas via navegadores. Tecnologias como HTML, CSS e JavaScript são a base, enquanto frameworks como React e Vue.js otimizam a produtividade e a manutenção do código."
+      },
+      {
+        "cmd": "Back-end",
+        "desc": "Responsável pela lógica de negócios, manipulação de dados e integração com outras aplicações. Linguagens como Node.js, PHP, Java e .NET são populares, e permitem construir APIs e serviços robustos e escaláveis."
+      },
+      {
+        "cmd": "Mobile",
+        "desc": "Desenvolvimento de aplicativos para dispositivos móveis. Pode ser nativo, usando linguagens específicas como Kotlin (Android) ou Swift (iOS), ou multiplataforma, com ferramentas como React Native e Flutter, que possibilitam criar apps para várias plataformas com um único código base."
+      }
     ]
   },
   {
@@ -139,12 +160,23 @@
     "emoji": "🔍",
     "title": "Testes e Qualidade de Software",
     "color": "pink",
-    "description": "Testes asseguram que o sistema funcione corretamente. Existem testes manuais e automatizados, com foco em garantir a qualidade do produto.",
-    "tipos": [
-      "Testes Unitários",
-      "Testes de Integração",
-      "Testes de Aceitação",
-      "Testes de Usabilidade"
+    "commands": [
+      {
+        "cmd": "Testes Unitários",
+        "desc": "Focam na verificação de componentes ou funções isoladas do sistema. São essenciais para garantir que cada parte se comporte conforme o esperado e facilitam a manutenção futura."
+      },
+      {
+        "cmd": "Testes de Integração",
+        "desc": "Avaliam se diferentes módulos ou componentes do sistema funcionam corretamente em conjunto, identificando problemas de comunicação entre partes integradas."
+      },
+      {
+        "cmd": "Testes de Aceitação",
+        "desc": "Validados pelo cliente ou usuário final, asseguram que o sistema cumpre todos os requisitos especificados e está pronto para ser implantado."
+      },
+      {
+        "cmd": "Testes de Usabilidade",
+        "desc": "Analisam a experiência do usuário ao interagir com o sistema, verificando se é intuitivo, eficiente e agradável de utilizar."
+      }
     ]
   },
   {
@@ -152,11 +184,23 @@
     "emoji": "📚",
     "title": "Recursos para aprender mais",
     "color": "gray",
-    "resources": [
-      "Livros como 'Engenharia de Software' (Pressman), 'UML Distilled'",
-      "Cursos em Udemy, Alura, Coursera",
-      "Documentações oficiais de linguagens e frameworks",
-      "Comunidades de desenvolvedores como Stack Overflow, Dev.to e GitHub"
+    "commands": [
+      {
+        "cmd": "Livros",
+        "desc": "Obras clássicas como 'Engenharia de Software' de Pressman, que aborda fundamentos e práticas modernas, e 'UML Distilled', um guia prático para modelagem de sistemas utilizando a linguagem UML."
+      },
+      {
+        "cmd": "Cursos",
+        "desc": "Plataformas como Udemy, Alura e Coursera oferecem cursos online atualizados sobre desenvolvimento de sistemas, abrangendo desde conceitos básicos até tópicos avançados."
+      },
+      {
+        "cmd": "Documentações",
+        "desc": "Consultas diretas às documentações oficiais das linguagens e frameworks são essenciais para aprofundar o conhecimento e seguir as melhores práticas de desenvolvimento."
+      },
+      {
+        "cmd": "Comunidades",
+        "desc": "Fóruns e redes como Stack Overflow, Dev.to e GitHub permitem trocar experiências, solucionar dúvidas e colaborar em projetos de código aberto, enriquecendo o aprendizado contínuo."
+      }
     ]
   },
   {
@@ -164,20 +208,15 @@
     "emoji": "🚀",
     "title": "DevOps no Desenvolvimento de Sistemas",
     "color": "indigo",
-    "description": "DevOps é uma cultura que une desenvolvimento (Dev) e operações (Ops) com foco em integração contínua, entrega contínua (CI/CD), automação e colaboração para tornar o ciclo de vida do software mais ágil e confiável.",
-    "principais_práticas": [
-      "Integração Contínua (CI)",
-      "Entrega Contínua (CD)",
-      "Infraestrutura como Código (IaC)",
-      "Monitoramento e Logs",
-      "Automação de Testes e Deploy"
-    ],
-    "ferramentas_populares": [
-      "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "GitHub Actions",
-      "Terraform"
+    "commands": [
+      {
+        "cmd": "Principais Práticas",
+        "desc": "Integração Contínua (CI) automatiza testes e builds a cada alteração no código; Entrega Contínua (CD) possibilita implantar atualizações rapidamente; Infraestrutura como Código (IaC) permite gerenciar recursos com scripts; Monitoramento e Logs garantem visibilidade e segurança; Automação reduz erros humanos e acelera processos."
+      },
+      {
+        "cmd": "Ferramentas Populares",
+        "desc": "Docker para conteinerização, Kubernetes para orquestração, Jenkins e GitHub Actions para pipelines CI/CD, além do Terraform para infraestrutura como código."
+      }
     ]
   },
   {
@@ -185,16 +224,11 @@
     "emoji": "🎯",
     "title": "Caminhos de Carreira",
     "color": "blue",
-    "description": "Profissionais de Análise e Desenvolvimento de Sistemas podem seguir diferentes caminhos conforme suas habilidades e interesses. A carreira pode evoluir para áreas técnicas ou de gestão.",
-    "possibilidades": [
-      "Desenvolvedor Front-end ou Back-end",
-      "Engenheiro de Software",
-      "Analista de Sistemas",
-      "Arquiteto de Software",
-      "Product Owner / Scrum Master",
-      "Gestor de Projetos de TI",
-      "Especialista em Qualidade (QA)",
-      "DevOps Engineer"
+    "commands": [
+      {
+        "cmd": "Possibilidades",
+        "desc": "A trajetória profissional pode incluir funções técnicas como Desenvolvedor Front-end ou Back-end, Engenheiro de Software, Analista ou Arquiteto de Sistemas. Alternativamente, pode evoluir para posições de gestão como Product Owner, Scrum Master ou Gestor de Projetos. Áreas como Qualidade (QA) e DevOps também oferecem excelentes oportunidades."
+      }
     ]
   },
   {
@@ -202,31 +236,30 @@
     "emoji": "📜",
     "title": "Certificações Relevantes",
     "color": "green",
-    "description": "Certificações ajudam a validar seu conhecimento e abrir portas no mercado de trabalho. Elas podem ser voltadas para metodologias, linguagens ou ferramentas específicas.",
-    "exemplos": [
+    "commands": [
       {
-        "name": "Scrum Fundamentals / PSM / CSPO",
-        "area": "Metodologias Ágeis"
+        "cmd": "Metodologias Ágeis",
+        "desc": "Certificações como Scrum Fundamentals, PSM (Professional Scrum Master) e CSPO (Certified Scrum Product Owner) validam conhecimento em práticas ágeis."
       },
       {
-        "name": "AWS Certified Developer",
-        "area": "Computação em Nuvem"
+        "cmd": "Computação em Nuvem",
+        "desc": "Certificação AWS Certified Developer comprova competência em desenvolvimento e implantação de aplicações na nuvem Amazon Web Services."
       },
       {
-        "name": "Oracle Java SE Programmer",
-        "area": "Linguagens de Programação"
+        "cmd": "Linguagens de Programação",
+        "desc": "Oracle Java SE Programmer certifica profissionais na linguagem Java, atestando domínio de fundamentos e boas práticas."
       },
       {
-        "name": "Microsoft Azure Fundamentals",
-        "area": "Cloud & DevOps"
+        "cmd": "Cloud & DevOps",
+        "desc": "Microsoft Azure Fundamentals oferece base sólida em serviços de computação em nuvem e DevOps, essencial para quem quer atuar neste segmento."
       },
       {
-        "name": "ISTQB Foundation",
-        "area": "Testes de Software"
+        "cmd": "Testes de Software",
+        "desc": "ISTQB Foundation é uma certificação reconhecida internacionalmente para profissionais de qualidade e testes de software."
       },
       {
-        "name": "GitHub Octernship / Google Career Certificates",
-        "area": "Prática e Iniciação"
+        "cmd": "Prática e Iniciação",
+        "desc": "Programas como GitHub Octernship e Google Career Certificates auxiliam iniciantes a ingressar no mercado através de experiências práticas e networking."
       }
     ]
   },
@@ -235,19 +268,15 @@
     "emoji": "🧪",
     "title": "Projetos Práticos Recomendados",
     "color": "purple",
-    "description": "Aplicar o conhecimento em projetos reais é essencial para desenvolver habilidades técnicas e montar um portfólio competitivo.",
-    "ideias_de_projetos": [
-      "Sistema de controle de estoque com login e banco de dados",
-      "Aplicativo de tarefas com notificações e CRUD",
-      "Plataforma de cursos online com autenticação e pagamentos simulados",
-      "Blog com painel administrativo e integração com APIs",
-      "Aplicativo de agenda pessoal com integração com calendário do Google"
-    ],
-    "beneficios": [
-      "Fixação do conhecimento",
-      "Criação de portfólio",
-      "Experiência com Git e versionamento",
-      "Preparação para entrevistas técnicas"
+    "commands": [
+      {
+        "cmd": "Ideias de Projetos",
+        "desc": "Sistema de controle de estoque com login e gerenciamento de produtos, aplicativo de tarefas com CRUD e notificações, plataforma de cursos online com autenticação e pagamentos simulados, blog com painel administrativo e integração com APIs externas, além de um aplicativo de agenda pessoal sincronizado ao Google Calendar."
+      },
+      {
+        "cmd": "Benefícios",
+        "desc": "Ao realizar projetos práticos, você fixa o conhecimento, monta um portfólio atrativo, adquire experiência com versionamento de código (Git) e se prepara melhor para processos seletivos, incluindo entrevistas técnicas."
+      }
     ]
   },
   {
@@ -255,19 +284,15 @@
     "emoji": "🧠",
     "title": "Habilidades Complementares",
     "color": "cyan",
-    "description": "Além da parte técnica, algumas habilidades comportamentais e de organização são valorizadas no mercado de desenvolvimento.",
-    "soft_skills": [
-      "Comunicação eficaz",
-      "Trabalho em equipe",
-      "Pensamento lógico",
-      "Gestão de tempo",
-      "Resolução de problemas"
-    ],
-    "hard_skills_extra": [
-      "Noções de UX/UI",
-      "Conceitos de Cloud Computing",
-      "Automação de testes",
-      "Inglês técnico"
+    "commands": [
+      {
+        "cmd": "Soft Skills",
+        "desc": "Comunicação eficaz, trabalho em equipe, pensamento lógico, gestão de tempo e resolução de problemas são habilidades essenciais que complementam o conhecimento técnico e melhoram o desempenho em ambientes colaborativos."
+      },
+      {
+        "cmd": "Hard Skills Extra",
+        "desc": "Noções de UX/UI para criação de interfaces mais intuitivas, conceitos de computação em nuvem para desenvolvimento moderno, automação de testes para garantir qualidade contínua e domínio de inglês técnico para leitura de documentações e interação com a comunidade global."
+      }
     ]
   }
 ]
