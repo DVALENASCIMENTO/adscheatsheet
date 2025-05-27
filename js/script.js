@@ -21,7 +21,10 @@ fetch('data/ads.json')
         btn.setAttribute('aria-label', cmdObj.desc);
         btn.addEventListener('click', () => {
           document.getElementById('modal-title').innerText = cmdObj.cmd;
-          document.getElementById('modal-text').innerText = cmdObj.desc;
+          document.getElementById('modal-text').innerHTML = `
+            <p>${cmdObj.desc}</p>
+            <p><a href="${cmdObj.link}" target="_blank" style="color: #5CA9E6; font-weight: bold;">🔗 Acessar recurso</a></p>
+          `;
           document.getElementById('modal').style.display = 'flex';
         });
         cmdContainer.appendChild(btn);
